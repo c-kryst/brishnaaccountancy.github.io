@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brishna Accountancy</title>
+    <link rel="stylesheet" href="./css/styleIn.css">
+    <script src="https://kit.fontawesome.com/7967d98f94.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rasa:ital,wght@0,300..700;1,300..700&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li> <a href="index.html">home</a> </li>
+                    <li> <a href="about.html">about</a> </li>
+                    <li> <a href="services.html">services</a> </li>
+                    <li> <a href="contact.html">contact</a> </li>
+                    <li> <a href="../admin/index.php">links</a> </li>
+                    <li> <i class="fa fa-search"></i> </li>
+                    <li> <button class="primary-btn"><a href="../login.php">Log In</a></button> </li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="menutoggle()"></i>
+            </div>
+        </div>
+    </header>
+    
+    <section class="home">
+        <div class="content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="../images/Banners/banner1.2.jpg" alt="">
+                    <div class="text">
+                        <h1>Welcome to Brishna Accountancy</h1>
+                        <p>Offering a comprehensive suite of financial services tailored to meet your individual or business needs.</p>
+                        <div class="flex">
+                            <a href="about.html"><button class="primary-btn">READ MORE</button></a>
+                            <a href="contact.html"><button class="secondary-btn">CONTACT US</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/Banners/banner2.2.jpg" alt="">
+                    <div class="text">
+                        <h1>Welcome to Brishna Accountancy</h1>
+                        <p>Offering a comprehensive suite of financial services tailored to meet your individual or business needs.</p>
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/Banners/banner3.2.jpg" alt="">
+                    <div class="text">
+                        <h1>Welcome to Brishna Accountancy</h1>
+                        <p>Offering a comprehensive suite of financial services tailored to meet your individual or business needs.</p>
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        945:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+
+
+    <section class="book">
+        <div class="container flex_space">
+            <div class="text">
+                <h1> <span>Book </span> Your Dates </h1>
+            </div>
+            <div class="form">
+                <form class="grid">
+                    <input type="date" placeholder="Date">
+                    <input type="time" placeholder="Time">
+                    <input type="text" placeholder="Company/Individual">
+                    <input type="text" placeholder="Purpose">
+                    <a href="../dashboard.php"><input type="" value="CHECK AVAILABILITY" cursor="pointer"></a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about top">
+        <div class="container flex">
+            <div class="left">
+                <div class="heading">
+                    <h1>WELCOME</h1>
+                    <h2>Brishna Accountancy</h2>
+                </div>
+                <p>At Brishna Accountancy, precision meets personalized service. Based in the heart of Paramatta, Sydney, 
+                    our firm is dedicated to providing top-tier accounting solutions to both individuals and businesses. With a strong 
+                    foundation built on trust and expertise, we strive to help our clients navigate the complex world of finance with 
+                    ease and confidence. Whether you need assistance with personal taxation, business advisory, financial planning, or bookkeeping, we have the expertise to help you. 
+                    Our services are designed to be flexible and scalable, ensuring that we can support you at every stage of you financial 
+                    journey.</p>
+
+                    <button class="primary-btn">ABOUT US</button>
+            </div>
+            <div class="right">
+                <img src="../images/Banners/about.jpg" alt="" id="about-img">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="counter top">
+        <div class="container grid">
+            <div class="box">
+                <h2>15+ Yrs</h2>
+                <hr>
+                <span>Industry Experience</span>
+            </div>
+            <div class="box">
+                <h2>2500+</h2>
+                <hr>
+                <span>Happy Clients Served</span>
+            </div>
+            <div class="box">
+                <h2>4.8 / 5</h2>
+                <hr>
+                <span>Average Client Satisfaction Rating</span>
+            </div>
+            <div class="box">
+                <h2>300+ Hrs</h2>
+                <hr>
+                <span>Pro Bono Work Annually</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="employees">
+        <div class="container top">
+            <div class="heading">
+                <h1>EXPLORE</h1>
+                <h2>People You Can Trust</h2>
+                <p> Our services don't make us unique - <span>Our People Do</span></p>
+            </div>
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/Personnel/p21.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>John Smith</h2>
+                            <div class="role">
+                               <button class="role-btn draw-border">Business Advisory</button>
+                               <button class="role-btn draw-border">Finance and Insurance</button>
+                               <button class="role-btn draw-border">Wealth Management</button>
+                            </div>
+                            <p>With over 25 years of experience in the accounting industry, John leads our firm with a commitment to excellence and integrity. He specializes in strategic financial planning, corporate tax advisory, and wealth management. John’s keen insight into complex financial issues and ability to develop innovative solutions make him a trusted advisor in business advisory and finance and insurance.</p>
+                            <div class="socials flex">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                <div class="profile">
+                                    <a href="#">Visit Profile</a>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/Personnel/p22.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Jane Doe</h2>
+                            <div class="rate">
+                               <button class="role-btn draw-border">Business Advisory</button>
+                               <button class="role-btn draw-border">Taxation</button>
+                            </div>
+                            <p>Jane has been with the firm for over 15 years and is an expert in tax compliance and consulting. She assists clients with tax planning, preparation, and strategies to minimize tax liabilities. Jane’s attention to detail and thorough understanding of tax laws make her a valuable asset in both taxation and business advisory services.</p>
+                            <div class="socials flex">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                <div class="profile">
+                                    <a href="#">Visit Profile</a>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/Personnel/p23.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Michael Brown</h2>
+                            <div class="rate">
+                               <button class="role-btn draw-border">Audit</button>
+                               <button class="role-btn draw-border">Business Advisory</button>
+                            </div>
+                            <p>Michael oversees our audit services, ensuring that our clients comply with regulatory requirements and achieve accurate financial reporting. With 10 years of audit experience, he excels in identifying risks and improving financial processes. Michael is dedicated to maintaining the highest standards of quality in audits and provides insightful advice in business advisory.</p>
+                            <div class="socials flex">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                <div class="profile">
+                                    <a href="#">Visit Profile</a>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/Personnel/p24.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Emily White</h2>
+                            <div class="rate">
+                               <button class="role-btn draw-border">Financial Analyst</button>
+                               <button class="role-btn draw-border">Wealth Management</button>
+                            </div>
+                            <p>Emily specializes in financial forecasting, budgeting, and performance analysis. She helps clients understand their financial data and make informed decisions. Emily’s analytical skills and ability to interpret complex financial information are crucial for driving business growth and profitability, making her indispensable in both financial analysis and wealth management.</p>
+                            <div class="socials flex">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                <div class="profile">
+                                    <a href="#">Visit Profile</a>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/Personnel/p25.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Robert Green</h2>
+                            <div class="rate">
+                               <button class="role-btn draw-border">Business Advisory</button>
+                               <button class="role-btn draw-border">Client Services</button>
+                            </div>
+                            <p>Robert is the primary point of contact for our clients, ensuring that their needs are met with personalized attention and care. He has a background in customer relations and excels in communication and problem-solving. Robert is dedicated to building strong client relationships and delivering exceptional service, playing a key role in client services and business advisory.</p>
+                            <div class="socials flex">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                <div class="profile">
+                                    <a href="#">Visit Profile</a>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/Personnel/p26.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Sophia Martinez</h2>
+                            <div class="rate">
+                               <button class="role-btn draw-border">Accounting</button>
+                               <button class="role-btn draw-border">Payroll Specialist</button>
+                            </div>
+                            <p>Sophia manages all aspects of payroll processing for our clients, ensuring accuracy and compliance with payroll laws. She has extensive experience in payroll management and is adept at handling complex payroll issues. Sophia is committed to providing timely and reliable payroll services, contributing significantly to our accounting services.</p>
+                            <div class="socials flex">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                <div class="profile">
+                                    <a href="#">Visit Profile</a>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/Personnel/p27.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>David Lee</h2>
+                            <div class="rate">
+                               <button class="role-btn draw-border">Accounting</button>
+                               <button class="role-btn draw-border">Junior Accountant</button>
+                            </div>
+                            <p>David supports the team with bookkeeping, financial statement preparation, and account reconciliations. He is a recent graduate with a degree in accounting and is currently pursuing his CPA certification. David’s enthusiasm and dedication to learning make him a promising member of our accounting team.</p>
+                            <div class="socials flex">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                <div class="profile">
+                                    <a href="#">Visit Profile</a>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/Personnel/p28.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Olivia Harris</h2>
+                            <div class="rate">
+                               <button class="role-btn draw-border">Accounting</button>
+                               <button class="role-btn draw-border">Accounts Receivable Specialist</button>
+                            </div>
+                            <p>Olivia manages our clients’ accounts receivable processes, ensuring timely invoicing and collections. She has a strong background in accounts management and excels in maintaining accurate financial records. Olivia’s organizational skills and attention to detail help improve our clients’ cash flow and financial stability, contributing to our accounting services.</p>
+                            <div class="socials flex">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                <div class="profile">
+                                    <a href="#">Visit Profile</a>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/Personnel/p29.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Lucas Walker</h2>
+                            <div class="rate">
+                               <button class="role-btn draw-border">Business Advisory</button>
+                               <button class="role-btn draw-border">IT Systems Analyst</button>
+                            </div>
+                            <p>Lucas oversees our firm’s IT infrastructure, ensuring that our systems are secure, efficient, and up-to-date. He has a background in information technology and specializes in cybersecurity and data management. Lucas’s expertise ensures that our clients’ financial data is protected and accessible, making him a vital part of our business advisory services.</p>
+                            <div class="socials flex">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                <div class="profile">
+                                    <a href="#">Visit Profile</a>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/Personnel/p30.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Rachel King</h2>
+                            <div class="rate">
+                               <button class="role-btn draw-border">Business Advisory</button>
+                               <button class="role-btn draw-border">Marketing Coordinator</button>
+                            </div>
+                            <p>Rachel is responsible for developing and implementing our firm’s marketing strategies. She has a background in marketing and communications and specializes in digital marketing and social media. Rachel’s creativity and strategic thinking help promote our services and engage with our clients, making her a key player in business advisory and marketing.</p>
+                            <div class="socials flex">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                                <div class="profile">
+                                    <a href="#">Visit Profile</a>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel1').owlCarousel({
+    loop:true,
+    margin:40,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+
+        },
+        945:{
+            items:3,
+            margin:10,
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+    </script>
+
+
+    <section class="partners">
+        <div class="container flex">
+            <h2>INTEGRATED WITH</h2>
+            <img src="../images/Partners/Xero.png" alt="">
+            <img src="../images/Partners/download.png" alt="" id="tpa">
+        </div>
+    </section>
+
+
+    <section class="services top">
+        <div class="container">
+            <div class="heading">
+                <h1>SPECIALTY</h1>
+                <h2>OUR SERVICES</h2>
+                <p>Are you an individual seeking personal financial advice or a business owner looking for expert guidance? Our team is here to help you achieve your financial goals.</p>
+            </div>
+
+            <div class="content flex_space">
+                <div class="left grid2">
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-sharp-duotone fa-solid fa-book"></i>
+                            <h3>Accounting, <br> Tax & Audit</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-money-bills"></i>
+                            <h3>Business & HR Advisory</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-duotone fa-solid fa-calculator"></i>
+                            <h3>Private Wealth, Finance & Insurance</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-file-pen"></i>
+                            <h3>Estate Planning</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="../images/Banners/Services_home.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="customer top">
+        <div class="container">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>Working with Brishna has been a game-changer for our business. Their expertise in financial planning and tax advisory has helped us save significant amounts of money and streamline our financial processes. The team is always responsive, professional, and goes above and beyond to meet our needs. We couldn't be happier with the service we've received.</p>
+                    <h3>CEO of Tech Innovators Inc.</h3>
+                    <label>Justin Williams</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>Brishna has been an invaluable partner for our real estate business. From managing our payroll to handling complex tax issues, their comprehensive services have allowed us to focus on growing our business. The level of personalized attention and care we receive is unmatched. We highly recommend them to any business looking for reliable and efficient accounting solutions.</p>
+                    <h3>Owner of Thompson Real Estate Group</h3>
+                    <label>Michael Thompson</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>The team at Brishna has been exceptional in helping us navigate the financial challenges of running a creative agency. Their detailed financial analysis and strategic advice have been crucial in our decision-making process. The peace of mind we have knowing our finances are in expert hands is priceless. They truly understand the unique needs of our industry.</p>
+                    <h3>Founder of Creative Solutions Agency</h3>
+                    <label>Elizabeth Sobek</label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel2').owlCarousel({
+    loop:true,
+    margin:40,
+    nav:false,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        945:{
+            items:1,
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+
+    <section class="news top rooms">
+        <div class="container">
+            <div class="heading">
+                <h1>NEWS</h1>
+                <h2>Trending</h2>
+                <p>Stay informed with the latest updates from Brishna Accountancy and the financial world. Our news section features the most recent insights, developments, and trends in accounting, taxation, business advisory, and more. Discover how we’re continuously working to provide top-tier services and stay ahead of industry changes.</p>
+            </div>
+
+            <div class="content flex">
+                <div class="left grid2">
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/News/Tax_regulations.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>2024 Tax Changes: Stay Compliant</h2>
+                            <div class="admin flex">
+                                <i class="fa-regular fa-newspaper"></i>
+                                <label>August 8, 2024</label>
+                            </div>
+                            <p>Stay informed about the latest changes in tax laws and regulations for the upcoming year. Our expert team breaks down what these changes mean for your business and provides actionable strategies to ensure full compliance and minimize your tax liability. Read more to find out how these updates could impact your bottom line.</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/News/cloud.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Cloud Accounting: The New Standard</h2>
+                            <div class="admin flex">
+                                <i class="fa-regular fa-newspaper"></i>
+                                <label>August 5, 2024</label>
+                            </div>
+                            <p>Discover the benefits of cloud accounting and why more businesses are transitioning to these platforms. From real-time financial reporting to enhanced security features, our firm explains how cloud accounting can streamline your financial operations and offer greater flexibility. Learn about the top platforms and how we can assist in your transition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="../images/News/forecast.jpg" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>2024 Economic Forecast: SME Insights</h2>
+                            <p>Get ahead with our analysis of the 2024 economic outlook. Understand trends affecting small and medium enterprises and strategies to navigate upcoming challenges.</p>
+                        </div>
+                    </div>
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="../images/News/cash.jpg" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>Boost Cash Flow: Quick Tips for SMEs</h2>
+                            <p>Effective cash flow management is crucial. Explore actionable strategies to enhance liquidity, reduce costs, and ensure your small business's financial health.</p>
+                        </div>
+                    </div>
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="../images/News/reporting.jpg" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>ESG Reporting: Financial Impacts</h2>
+                            <p>Environmental, Social, and Governance (ESG) factors are influencing finance. Learn how ESG reporting affects your financial statements and steps to integrate it effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="../images/logo.png" alt="" class="footer_logo">
+                <p>The information contained on this site is provided by Brishna Accountancy for general informational purposes only. This content does not constitute legal, accounting, or other professional advice. Visitors to this site should not act or refrain from acting on the basis of any content included in this site without seeking appropriate legal or other professional advice on the particular facts and circumstances at issue. Brishna expressly disclaims all liability in respect of actions taken or not taken based on any or all the contents of this site. Please note that laws and regulations vary by jurisdiction, and the information provided on this site may not be applicable to your specific situation.</p>
+
+                <div class="icon">
+                    <a href="www.facebook.com"> <i class="fa fa-facebook-f"></i> </a> 
+                    <a href="www.instagram.com"> <i class="fa fa-instagram"></i> </a>
+                    <a href="www.twitter.com"> <i class="fa fa-twitter"></i> </a>
+                    <a href="www.youtube.com"> <i class="fa fa-youtube"></i> </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Links</h2>
+                <ul>
+                    <a href=""><li>Company History</li></a>
+                    <a href=""><li>About Us</li></a>
+                    <a href=""><li>Services</li></a>
+                    <a href=""><li>Contact Us</li></a>
+                    <a href=""><li>Privacy Policy</li></a>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Contact Us</h2>
+                <p>Contact us to see how our accounting expertise and personalised services can save you time, money, and frustration with managing your finances.</p>
+                <i class="fa fa-location-dot"></i>
+                <label>7/181 Church Street</label>
+                <label>Parramatta, NSW, 2150</label> <br>
+                <i class="fa fa-phone"></i>
+                <label>+61 412 370 461</label> <br>
+                <i class="fa fa-envelope"></i>
+                <label>tax@brishnaaccountancy.com</label>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="legal">
+        <p class="container">Copyright (c) 2024 Copyright Holder All Rights Reserved.</p>
+    </div>
+
+
+<script src="js/style.js" charset="utf-8"></script>
+</body>
+
+</html>
