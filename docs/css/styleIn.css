@@ -542,7 +542,7 @@ input {
 
 /*-------testimonials-------*/
 .customer{
-    background-image: url(../../images/Banners/Testimoney.jpg);
+    background-image: url(../images/Banners/Testimoney.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
