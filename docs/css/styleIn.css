@@ -298,7 +298,7 @@ input {
 
 /*-------counter-------*/
 .counter {
-    background-image: url("../../images/Banners/background-1.2.jpg");
+    background-image: url("../images/Banners/background-1.2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 40vh;
